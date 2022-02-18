@@ -1,0 +1,194 @@
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-desktop.png);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+::placeholder {
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+}
+input[type="text"],input[type="email"],input[type="password"] {
+    border: 0.2px solid rgb(185, 182, 211,0.5);
+    border-radius: 5px;
+    margin: 2% 5%;
+    padding: 3%;
+    width: 85%;
+}
+button[type="submit"] {
+    margin: 2% 4%;
+    padding: 3%;
+    width: 92%;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 0;
+}
+
+.desc {
+    height: 80%;
+    line-height: 1.2;
+    padding: 10% 0 10% 5%;
+    width: 40%;
+}
+.desc-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.desc-content {
+    line-height: 1.5;
+}
+
+.sign-up {
+    margin: 2% 2%;
+    padding: 0 3% 2%;
+    width: 40%;
+}
+.sign-up-amt {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    box-shadow: 0 10px  rgba(240, 102, 102, 0.75);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.sign-up-day {
+    font-weight: 400;
+    opacity: 0.7;
+}
+.sign-up-form {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 10px  rgba(240, 102, 102, 0.75);
+    padding: 5% 3%;
+}
+.form-label{
+    color :hsl(0, 100%, 74%);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-style: italic;
+    font-size: 0.7rem;
+    margin: 0 3.5%;
+    text-align: end;
+}
+.btn {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 3px hsl(154, 61%, 46%);
+    -moz-box-shadow: 0px 5px 3px hsl(154, 61%, 46%);
+    box-shadow: 0px 5px 3px hsl(154, 61%, 46%);
+    color: hsl(248, 25%, 94%);
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: hsl(154, 59%, 51%);
+    padding: 15px 40px 15px 40px;
+}
+.btn:hover {
+    background: hsl(154, 67%, 72%);
+}
+.form-terms {
+    margin: 2% 3% 0;
+    padding: 1%;
+    font-size: 0.8rem;
+    color: hsl(246, 25%, 77%);   
+    text-align: center;
+}
+.terms-conditions {
+    color :hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+   
+@media (min-width:426px) and (max-width:768px) {
+    input[type="text"],input[type="email"],input[type="password"] {
+        margin: 5%;
+        padding: 5%;
+        width: 80%;
+    }
+    .desc{
+        font-size: 1rem;
+        margin-top: 5%;
+        padding: 3%;
+        text-align: center;
+    }
+    .desc-title{
+        font-size: 2rem;
+    }
+    .sign-up{
+        width: 42%;
+    }
+    .sign-up-amt{
+        margin-bottom: 25px;
+    }
+    .sign-up-form{
+        padding: 15% auto;
+    }
+    .btn {
+        font-size: .7rem;
+        padding: 2%;
+    }
+    .form-terms{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width:426px){
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+    }
+    .about-us{
+        margin: 2%;
+    }
+    .desc{
+        font-size: 1rem;
+        margin: 0 5%;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .desc-title{
+        font-size: 2rem;
+    }
+    .sign-up{
+        width: 100%;
+        padding: 3%;
+    }
+    .sign-up-amt{
+        padding: 5% 15%;
+        margin-bottom: 25px;
+    }
+    input[type="text"],input[type="email"],input[type="password"] {
+        width: 80%;
+        padding: 5%;
+        color : hsl(154, 61%, 46%)
+    }
+    .btn {
+        font-size: .7rem;
+        padding: 2%;
+    }
+    .form-terms{
+        font-size: 0.5rem;
+    }
+}
+
+/* form validation */
+
+.icon-svg {
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position : 95%;
+}
+.fname_label{
+    width: 20%;
+    color: hsl(0, 100%, 74%);
+}
+input:focus::placeholder {
+    color: transparent;
+}
